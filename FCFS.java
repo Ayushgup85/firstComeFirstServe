@@ -2,8 +2,7 @@ import java.text.ParseException;
 
 class GFG {
 
-	// Function to find the waiting time for all
-	// processes
+	
 	static void findWaitingTime(int processes[], int n,
 			int bt[], int wt[]) {
 		// waiting time for first process is 0
@@ -30,15 +29,7 @@ class GFG {
 		int wt[] = new int[n], tat[] = new int[n];
 		int total_wt = 0, total_tat = 0;
 
-		//Function to find waiting time of all processes
-		findWaitingTime(processes, n, bt, wt);
-
-		//Function to find turn around time for all processes
-		findTurnAroundTime(processes, n, bt, wt, tat);
-
-		//Display processes along with all details
-		System.out.printf("Processes Burst time Waiting"
-					+" time Turn around time\n");
+		
 
 		// Calculate total waiting time and total turn
 		// around time

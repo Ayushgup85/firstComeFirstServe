@@ -25,6 +25,10 @@ void findTurnAroundTime( int processes[], int n,
 		tat[i] = bt[i] + wt[i];
 }
 
+ for(int i = 0; i < size; i++){
+
+        arr[i] =  (rand() % 10);
+     }
 //Function to calculate average time
 void findavgTime( int processes[], int n, int bt[])
 {

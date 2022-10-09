@@ -3,15 +3,9 @@
 
 # Function to find the waiting
 # time for all processes
-	# calculating waiting time
-	for i in range(1, n ):
-		wt[i] = bt[i - 1] + wt[i - 1]
-def findWaitingTime(processes, n,
-					bt, wt):
-
-	# waiting time for
-	# first process is 0
-	wt[0] = 0
+from fastapi import FastAPI
+from routes.user import user 
+app = FastAPI()
 
 
 
@@ -66,6 +60,17 @@ if __name__ =="__main__":
 	n = len(processes)
 
 	findavgTime(processes, n, burst_time)
+	
+	
+		# calculating waiting time
+	for i in range(1, n ):
+		wt[i] = bt[i - 1] + wt[i - 1]
+def findWaitingTime(processes, n,
+					bt, wt):
+
+	# waiting time for
+	# first process is 0
+	wt[0] = 0
 
 # This code is contributed
 # by ChitraNayal

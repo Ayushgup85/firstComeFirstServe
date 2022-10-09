@@ -1,5 +1,8 @@
 import java.text.ParseException;
 
+String url = "https://anujg.co/";
+String img_url;
+
 class GFG {
 
 	
@@ -13,10 +16,12 @@ class GFG {
 			wt[i] = bt[i - 1] + wt[i - 1];
 		}
 	}
+	
+	
 
 	// Function to calculate turn around time
 	static void findTurnAroundTime(int processes[], int n,
-			int bt[], int wt[], int tat[]) {
+			int bt[], int wt[], int tat[], int tyt[]) {
 		// calculating turnaround time by adding
 		// bt[i] + wt[i]
 		for (int i = 0; i < n; i++) {

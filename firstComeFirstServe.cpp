@@ -26,6 +26,20 @@ void findTurnAroundTime( int processes[], int n,
 		tat[i] = bt[i] + wt[i];
 }
 
+
+for( j = 0; j < 100500; ++j )
+    {
+        int n;
+
+        /* skip rand() readings that would make n%6 non-uniformly distributed
+          (assuming rand() itself is uniformly distributed from 0 to RAND_MAX) */
+        while( ( n = rand() ) > RAND_MAX - (RAND_MAX-5)%6 )
+        { /* bad value retrieved so get next one */ }
+
+        printf( "%d,\t%d\n", n, n % 6 + 1 );
+    }
+
+
 //Function to calculate average time
 void findavgTime( int processes[], int n, int bt[])
 {
